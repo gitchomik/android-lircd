@@ -23,10 +23,10 @@ but then set path to Android NDK in NDK_BASE
 export NDK_BASE=/opt/other_dir/android-ndk
 
 a) compiling static binaries and libs
-./build_static_ndk.sh
+./build_static_with_ndk.sh
 
 b) compiling dynamic binaries and libs
-./build_ndk.sh
+./build_with_ndk.sh
 
 
 This is the README file for LIRC, the Linux Infrared Remote Control
