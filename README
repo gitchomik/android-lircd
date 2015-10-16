@@ -1,3 +1,34 @@
+1. First of all run
+
+./autogen.sh
+
+2. Cross compilation using gcc-arm-linux-gnueabihf
+
+apt-get update
+apt-get install gcc-arm-linux-gnueabihf
+
+a) compiling static binaries and libs
+./build_static.sh
+
+b) compiling dynamic binaries and libs
+./build.sh
+
+3. Cross compilation using Android NDK
+
+Download and install Android NDK
+https://developer.android.com/ndk/downloads/index.html
+to /opt/android-ndk directory, or other directory
+but then set path to Android NDK in NDK_BASE
+
+export NDK_BASE=/opt/other_dir/android-ndk
+
+a) compiling static binaries and libs
+./build_static_ndk.sh
+
+b) compiling dynamic binaries and libs
+./build_ndk.sh
+
+
 This is the README file for LIRC, the Linux Infrared Remote Control
 package. The main documentation of this package is available in HTML
 format.  Please refer to the file doc/html/index.html for more
